@@ -2,7 +2,7 @@ import React from "react";
 
 function Bootstrap() {
   return (
-    <div>
+    <div className="container">
       <div className="jumbotron">
         <h1>Hello, world!</h1>
         <p>I'm a jumbotron!</p>

@@ -1,62 +1,62 @@
 [
   {
     "id": 1,
-    "image": "public/assets/images/black-drum-circle.jpg",
+    "image": "assets/images/black-drum-circle.jpg",
     "clicked": false
   },
   {
     "id": 2,
-    "image": "public/assets/images/blue-marlin-circle.jpg",
+    "image": "assets/images/blue-marlin-circle.jpg",
     "clicked": false
   },
   {
     "id": 3,
-    "image": "public/assets/images/bonefish.jpg",
+    "image": "assets/images/bonefish.jpg",
     "clicked": false
   },
   {
     "id": 4,
-    "image": "public/assets/images/common-snook-arrow.jpg",
+    "image": "assets/images/common-snook-arrow.jpg",
     "clicked": false
   },
   {
     "id": 5,
-    "image": "public/assets/images/dolphinfishdrp.jpg",
+    "image": "assets/images/dolphinfishdrp.jpg",
     "clicked": false
   },
   {
     "id": 6,
-    "image": "public/assets/images/hogfish.jpg",
+    "image": "assets/images/hogfish.jpg",
     "clicked": false
   },
   {
     "id": 7,
-    "image": "public/assets/images/mutton-snapper-circle.jpg",
+    "image": "assets/images/mutton-snapper-circle.jpg",
     "clicked": false
   },
   {
     "id": 8,
-    "image": "public/assets/images/permit.jpg",
+    "image": "assets/images/permit.jpg",
     "clicked": false
   },
   {
     "id": 9,
-    "image": "public/assets/images/reddrum.jpg",
+    "image": "assets/images/reddrum.jpg",
     "clicked": false
   },
   {
     "id": 10,
-    "image": "public/assets/images/sailfish.jpg",
+    "image": "assets/images/sailfish.jpg",
     "clicked": false
   },
   {
     "id": 11,
-    "image": "public/assets/images/spottedseatrout.jpg",
+    "image": "assets/images/spottedseatrout.jpg",
     "clicked": false
   },
   {
     "id": 12,
-    "image": "public/assets/images/tarpon-circle.jpg",
+    "image": "assets/images/tarpon-circle.jpg",
     "clicked": false
   }
 ]

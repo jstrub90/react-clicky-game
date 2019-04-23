@@ -1,8 +1,7 @@
 import React, { Component, Fragment } from 'react';
-// import './scss/App.scss';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import GameArea from './components/GameArea';
+import './css/App.css';
+import HeaderSection from './components/HeaderSection';
+import Ocean from './components/Ocean';
 import data from "./data";
 
 class App extends Component {
@@ -15,11 +14,11 @@ class App extends Component {
   }
 
   messages = [
-    "Good job keep it up!",
-    "Great, now keep on clicking!",
-    "Keep on clicking and set a new high score!",
-    "Nice, click like there's no tomorrow!",
-    "You're doing great, now click some more!"
+    "Awesome!",
+    "Great, you're so close to catching them all!",
+    "Lets set a new high score!",
+    "Keep on clicking on!",
+    "Clicks away!"
   ]
 
   componentDidMount = () => {
@@ -44,11 +43,7 @@ class App extends Component {
   checkGuess = id => {
     let correctGuess = false;
     const newData = this.state.data.map(item => {
-      // console.log(item.id);
       if (item.id === parseInt(id)) {
-        // console.log(item.id);
-        // console.log(item.clicked);
-        // console.log(id);
         if (!item.clicked) {
           item.clicked = true;
           correctGuess = true;
@@ -66,10 +61,8 @@ class App extends Component {
           message: this.messages[Math.floor(Math.random()*this.messages.length)]
         }
       )
-      // this.animateCSS('.message', 'pulse')
     }
     else {
-      // this.animateCSS('main', 'shake')
       this.setState(
         {
           data: this.resetData(newData),
@@ -80,32 +73,19 @@ class App extends Component {
     }
   }
 
-  // animateCSS = (element, animationName, callback) => {
-  //   const node = document.querySelector(element)
-  //   node.classList.add('animated', animationName)
-  //   let handleAnimationEnd = () => {
-  //     node.classList.remove('animated', animationName)
-  //     node.removeEventListener('animationend', handleAnimationEnd)
-  //     if (typeof callback === 'function') callback()
-  //   }
-  //   node.addEventListener('animationend', handleAnimationEnd)
-  // }
-
   render() {
     return (
       <Fragment>
-        <Header
+        <HeaderSection
           status={this.state.status}
           score={this.state.score}
           topScore={this.state.topScore}
         />
-        <GameArea
+        <Ocean
           message={this.state.message}
           fish={this.state.data}
-          // animate={this.animateCSS}
           handleClick={this.handleClick}
         />
-        <Footer />
       </Fragment>
     );
   }
